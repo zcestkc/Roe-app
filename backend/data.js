@@ -1,4 +1,20 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+  users: [
+    {
+      name: 'Kwan',
+      email: 'kwan9545@gmail.com',
+      password: bcrypt.hashSync('y5155914', 8),
+      isAdmin: true,
+    },
+    {
+      name: 'Zoe',
+      email: 'zoebrelstaff@hotmal.com',
+      password: bcrypt.hashSync('zoebrelstaff', 8),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
       _id: '1',
@@ -72,7 +88,7 @@ const data = {
       numReviews: 15,
       description: 'high quality product',
     },
-  ]
-}
+  ],
+};
 
 export default data;
