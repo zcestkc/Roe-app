@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/roe', {
+mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost/roe', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
