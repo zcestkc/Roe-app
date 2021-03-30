@@ -1,1 +1,3 @@
-# Welcome to Roe, an e-commerce app
+# Welcome to Roe
+
+https://roe-ecommerce.herokuapp.com/
